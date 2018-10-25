@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Business Card Example</title>
+  <style>
+    body{
+      background-color: #EEE;
+      width: 440px;
+      margin: 240px;
+    }
+    h1,h2,p,ul{
+      color: #EEE;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      font-family: arial;
+    }
+    #business-card{
+      background-color: #111;
+      width: 440px;
+      height: 240px;
+      box-shadow: 5px 5px 5px 5px #111;
+    }
+    #business-card .name{
+      float: left;
+      text-align: right;
+      padding-right: 30px;
+      border-right: 3px solid white;
+      margin-top: 65px;
+      padding: 10px;
+    }
+    #business-card .info{
+      color: rgb(130, 130, 90);
+      float: right;
+      text-align: left;
+      margin-top: 65px;
+      position: relative; right: 1px;
+    }
+    #business-card .name h1{
+      color: white;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-size: 27px;
+
+    }
+    #business-card .name h2{
+      color: yellow;
+      font-size: 20px;
+      text-transform: uppercase;
+
+    }
+    #business-card .name small{
+      color: rgb(130, 130, 90);
+    }
+    #business-card .info li{
+      color: rgb(130, 130, 90);
+    }
+    #business-card .info li:first-child:before{
+        content: "\1F4DE";
+        size: 10px;
+    }
+    #business-card .info li:last-child:before{
+      content: 	"\1F50D";
+      size: 10px;
+    }
+    #business-card .info li+li:before{
+        content: "\1F4E9";
+        size: 10px;
+    }
+    </style>
+</head>
+<body>
+  <div id="business-card">
+
+    <div class="name">
+      <h1>Firstname</h1>
+      <h2>Lastname</h2>
+      <small>web designer &#47; developer</small>
+    </div>
+    <div class="info">
+      <p>12345 Some Street, City<br>State, Province, Country</p>
+       <ul>
+         <li>+00 22 333444</li>
+         <li>email@somemail.example</li>
+         <li>www.exampledomain.example</li>
+       </ul>
+    </div>
+
+  </div>
+</body>
+</html>
